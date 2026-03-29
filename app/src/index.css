@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 30 10% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 10% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 10% 12%;
+
+    --primary: 25 30% 26%;
+    --primary-foreground: 40 20% 97%;
+
+    --secondary: 35 12% 92%;
+    --secondary-foreground: 30 10% 12%;
+
+    --muted: 35 12% 92%;
+    --muted-foreground: 30 6% 48%;
+
+    --accent: 30 32% 48%;
+    --accent-foreground: 40 20% 97%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 10% 87%;
+    --input: 35 10% 87%;
+    --ring: 25 30% 26%;
+
+    --radius: 0.25rem;
+
+    --sidebar-background: 40 20% 97%;
+    --sidebar-foreground: 30 6% 28%;
+    --sidebar-primary: 30 10% 12%;
+    --sidebar-primary-foreground: 40 20% 97%;
+    --sidebar-accent: 35 12% 92%;
+    --sidebar-accent-foreground: 30 10% 12%;
+    --sidebar-border: 35 10% 90%;
+    --sidebar-ring: 25 30% 26%;
+
+    /* Custom tokens */
+    --confidence-high: 0 72% 51%;
+    --confidence-medium: 38 92% 50%;
+    --confidence-low: 152 60% 40%;
+    --tan: 30 32% 48%;
+    --paper: 40 20% 97%;
+
+    /* Elevation */
+    --shadow-card: 0 1px 3px 0 hsl(30 10% 12% / 0.04), 0 1px 2px -1px hsl(30 10% 12% / 0.04);
+    --shadow-elevated: 0 4px 12px -2px hsl(30 10% 12% / 0.08), 0 2px 4px -2px hsl(30 10% 12% / 0.04);
+  }
+
+  .dark {
+    --background: 30 8% 6%;
+    --foreground: 35 12% 92%;
+    --card: 30 8% 9%;
+    --card-foreground: 35 12% 92%;
+    --popover: 30 8% 9%;
+    --popover-foreground: 35 12% 92%;
+    --primary: 30 32% 54%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 30 6% 16%;
+    --secondary-foreground: 35 12% 92%;
+    --muted: 30 6% 16%;
+    --muted-foreground: 30 6% 58%;
+    --accent: 25 30% 32%;
+    --accent-foreground: 35 12% 92%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 35 12% 92%;
+    --border: 30 6% 16%;
+    --input: 30 6% 16%;
+    --ring: 30 32% 54%;
+    --sidebar-background: 30 8% 8%;
+    --sidebar-foreground: 35 8% 80%;
+    --sidebar-primary: 30 32% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 30 6% 16%;
+    --sidebar-accent-foreground: 35 8% 80%;
+    --sidebar-border: 30 6% 16%;
+    --sidebar-ring: 30 32% 54%;
+
+    --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.2);
+    --shadow-elevated: 0 4px 12px -2px hsl(0 0% 0% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.011em;
+    font-feature-settings: "cv11", "ss01";
+  }
+
+  h1, h2, h3 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  h4, h5, h6 {
+    font-family: 'Inter', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  ::selection {
+    background: hsl(30 32% 48% / 0.2);
+  }
+}
+
+@layer utilities {
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}

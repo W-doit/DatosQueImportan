@@ -1,0 +1,54 @@
+# Data files
+*.csv
+*.json
+data/processed/*
+data/raw/*
+
+# Node.js / React app
+node_modules/
+dist/
+dist-ssr/
+*.local
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDE
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep directory structure
+!data/processed/.gitkeep
+!data/raw/.gitkeep
