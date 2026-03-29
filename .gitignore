@@ -1,8 +1,7 @@
-# Data files
+# Data files - only ignore CSVs to save space
 *.csv
-*.json
-data/processed/*
-data/raw/*
+# Allow JSON files (needed by app)
+# *.json removed - we need these files
 
 # Node.js / React app
 node_modules/
